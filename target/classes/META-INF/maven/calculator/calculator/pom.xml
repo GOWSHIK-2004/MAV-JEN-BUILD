@@ -20,7 +20,7 @@
           <manifest>
                <addClasspath>true</addClasspath>
                <classpathPrefix>lib</classpathPrefix>
-               <mainClass>calcpkg.Mycalc</mainClass>
+               <mainClass>calcpkg.MyCalc</mainClass>
            </manifest>
           </archive>
         </configuration>
