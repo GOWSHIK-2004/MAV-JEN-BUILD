@@ -5,7 +5,10 @@ package calcpkg;
 public class MyCalc {
 	
 	public int sum(int a , int b) {
-		return a+b;
+		int c = 10;
+		int d = 5;
+		
+		return c+d;
 	}
 	
 	public int difference(int a , int b) {
@@ -25,6 +28,7 @@ public class MyCalc {
 		System.out.println("Difference is " + ob.difference(5, 5));
 		System.out.println("Multiplication is : " + ob.mul(4, 5));
 		System.out.println("Division  is : " + ob.div(5, 2));
+		System.out.println("Gowshik-2004");
 
 	}
 
