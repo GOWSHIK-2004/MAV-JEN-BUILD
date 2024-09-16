@@ -29,6 +29,7 @@ public class MyCalc {
 		System.out.println("Multiplication is : " + ob.mul(4, 5));
 		System.out.println("Division  is : " + ob.div(5, 2));
 		System.out.println("Gowshik-2004");
+		System.out.println("Gowshik gamer");
 
 	}
 
