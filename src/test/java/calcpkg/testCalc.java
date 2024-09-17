@@ -14,6 +14,7 @@ class testCalc {
 	@Test
 	public void test() {
 		assertEquals(10,obj.sum(10, 0));
+		assertEquals(50,obj.difference(30, 0));
 	}
 
 }
