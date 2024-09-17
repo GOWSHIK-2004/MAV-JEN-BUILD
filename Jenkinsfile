@@ -36,6 +36,11 @@ pipeline
 				bat 'mvn test'
 			}			
 		}
+		stage('Version stage'){
+			steps{
+				bat 'java --version'
+			}
+		}
 		stage('Pre-Build Stage')
 		{
 			steps
