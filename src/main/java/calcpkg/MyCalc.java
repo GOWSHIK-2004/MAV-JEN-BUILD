@@ -5,10 +5,9 @@ package calcpkg;
 public class MyCalc {
 	
 	public int sum(int a , int b) {
-		int c = 10;
-		int d = 5;
 		
-		return c+d;
+		
+		return a+b;
 	}
 	
 	public int difference(int a , int b) {

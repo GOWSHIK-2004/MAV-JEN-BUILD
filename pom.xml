@@ -1,66 +1,74 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>calculator</groupId>
-  <artifactId>calculator</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  
-  
-  <dependencies>
-       <dependency>
-             <groupId>org.sonarsource.scanner.maven</groupId>
-             <artifactId>sonar-maven-plugin</artifactId>
-             <version>3.9.0.2155</version>
-       
-       </dependency>
-  
-  
-  
-  </dependencies>
-  
-  
-  
-  
-  
-  <build>
-  <finalName>gowshik-calculator</finalName>
-     <plugins>
-     <plugin>
-       <groupId>org.apache.maven.plugins</groupId>
-       <artifactId>maven-jar-plugin</artifactId>
-       <version>3.4.1</version>
-       <configuration>
-          <archive>
-          <manifest>
-               <addClasspath>true</addClasspath>
-               <classpathPrefix>lib</classpathPrefix>
-               <mainClass>calcpkg.MyCalc</mainClass>
-           </manifest>
-          </archive>
-        </configuration>
-       </plugin>
-      </plugins>     
-   </build>
-   
-  <profiles>
-      <profile>
-           <id>sonar</id>
-           <activation>
-               <activeByDefault>true</activeByDefault>
-               
-               
-            
-           </activation>
-           <properties>
-           <sonar.host.url>http://localhost:9000</sonar.host.url></properties>
-       
-      </profile>
-   
-  </profiles>
-  
-  
-  
-  
-  
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>calculator</groupId>
+	<artifactId>calculator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.9.0.2155</version>
+
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.10.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+
+
+	<build>
+		<finalName>gowshik-calculator</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.4.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib</classpathPrefix>
+							<mainClass>calcpkg.MyCalc</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+
+
+			</activation>
+			<properties>
+				<sonar.host.url>http://localhost:9000</sonar.host.url>
+			</properties>
+
+		</profile>
+
+	</profiles>
+
+
 </project>
